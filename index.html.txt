@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonix - Premium Mobile Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Phonix<span>.</span></div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Phones</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="cart-icon" id="cart-icon-btn">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Upgrade to the Future</h1>
+            <p>Discover the latest smartphones with cutting-edge technology at unbeatable prices.</p>
+            <a href="#shop" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+
+    <!-- Main Shop Section -->
+    <main id="shop" class="shop-container">
+        <h2 class="section-title">Featured Smartphones</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Dynamic products will be inserted here by JavaScript -->
+        </div>
+    </main>
+
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will appear here dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="checkout-btn" onclick="alert('Thank you for your purchase!')">Proceed to Checkout</button>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Phonix Mobile Shop. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
